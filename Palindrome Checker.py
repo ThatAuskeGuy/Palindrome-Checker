@@ -7,6 +7,9 @@ from string import whitespace
 print('This will check if what you input is a palindrome.')
 
 def palindrome():
+    #This function takes user input, lowercases it, romves punctuation, and removes whitespace.
+    #Prints out both the original string and the reversed string.
+    #Tells user if string was palindrome or not.
     print()
     s = input('Please provide a word, sentence, or number to check: ')
     s = s.translate({ord(k):"" for k in punctuation}).lower()
